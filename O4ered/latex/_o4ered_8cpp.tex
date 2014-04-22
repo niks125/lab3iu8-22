@@ -1,0 +1,165 @@
+\section{O4ered.\-cpp File Reference}
+\label{_o4ered_8cpp}\index{O4ered.\-cpp@{O4ered.\-cpp}}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$locale.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bf M\-A\-X}~100
+\begin{DoxyCompactList}\small\item\em создание очереди \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ {\bf qretrieve} (void)
+\begin{DoxyCompactList}\small\item\em Извлечение элемента \end{DoxyCompactList}\item 
+void {\bf enter} (void)
+\begin{DoxyCompactList}\small\item\em Вставка в очередь нового элемента \end{DoxyCompactList}\item 
+void {\bf qstore} (char $\ast$q)
+\begin{DoxyCompactList}\small\item\em Вставка в очередь нового элемента \end{DoxyCompactList}\item 
+void {\bf review} (void)
+\begin{DoxyCompactList}\small\item\em Вставка в очередь нового элемента \end{DoxyCompactList}\item 
+void {\bf delete\-\_\-ap} (void)
+\begin{DoxyCompactList}\small\item\em Удаление элемента из очереди \end{DoxyCompactList}\item 
+char {\bfseries retrieve} (void)\label{_o4ered_8cpp_ad6179df7031edcad2f714aa1e3bc3e44}
+
+\item 
+int {\bf main} ()
+\begin{DoxyCompactList}\small\item\em Основная функция \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ {\bfseries p} [{\bf M\-A\-X}]\label{_o4ered_8cpp_ab39066f5c1086659cd6210c7bdc3063f}
+
+\item 
+int {\bfseries spos} = 0\label{_o4ered_8cpp_a24f340511b1280c042f185eab3c90984}
+
+\item 
+int {\bfseries rpos} = 0\label{_o4ered_8cpp_aeb0b0d2597e73f4e7f45b756c2ffd1bb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{O4ered.\-cpp@{O4ered.\-cpp}!M\-A\-X@{M\-A\-X}}
+\index{M\-A\-X@{M\-A\-X}!O4ered.cpp@{O4ered.\-cpp}}
+\subsubsection[{M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X~100}\label{_o4ered_8cpp_a392fb874e547e582e9c66a08a1f23326}
+
+
+создание очереди 
+
+в проекте создается очередь и несколько функций для работы с ней\-: добавление и удаление namespace std; Пространство имен A 
+
+Definition at line 23 of file O4ered.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\index{O4ered.\-cpp@{O4ered.\-cpp}!delete\-\_\-ap@{delete\-\_\-ap}}
+\index{delete\-\_\-ap@{delete\-\_\-ap}!O4ered.cpp@{O4ered.\-cpp}}
+\subsubsection[{delete\-\_\-ap}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-\_\-ap (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_o4ered_8cpp_a8e0658944764b32e2f064033d66f1201}
+
+
+Удаление элемента из очереди 
+
+Данная функция позволяет удалить элемент из очереди инициализация дополнительного массива
+
+удаление элемента 
+
+Definition at line 89 of file O4ered.\-cpp.
+
+\index{O4ered.\-cpp@{O4ered.\-cpp}!enter@{enter}}
+\index{enter@{enter}!O4ered.cpp@{O4ered.\-cpp}}
+\subsubsection[{enter}]{\setlength{\rightskip}{0pt plus 5cm}void enter (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_o4ered_8cpp_a6fbbf03d0445e7f8077fe7dea906d673}
+
+
+Вставка в очередь нового элемента 
+
+Данная функция позволяет добавить в очередь новый элемент при условии, что количество элементов не будет превышать ограничения выделение памяти, если возможно
+
+вставка элемента 
+
+Definition at line 35 of file O4ered.\-cpp.
+
+\index{O4ered.\-cpp@{O4ered.\-cpp}!main@{main}}
+\index{main@{main}!O4ered.cpp@{O4ered.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_o4ered_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Основная функция 
+
+Руссифицируем
+
+инициализация массива очереди
+
+инициализация счетчика
+
+вывод меню функций на экран
+
+выбор функции пользователем 
+
+Definition at line 119 of file O4ered.\-cpp.
+
+\index{O4ered.\-cpp@{O4ered.\-cpp}!qretrieve@{qretrieve}}
+\index{qretrieve@{qretrieve}!O4ered.cpp@{O4ered.\-cpp}}
+\subsubsection[{qretrieve}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ qretrieve (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_o4ered_8cpp_a8752bd9a5be1550b2015c97037d6cdb8}
+
+
+Извлечение элемента 
+
+Данная функция позволяет извлечь элемент из очереди увеличение счетчика
+
+извлечение элемента 
+
+Definition at line 105 of file O4ered.\-cpp.
+
+\index{O4ered.\-cpp@{O4ered.\-cpp}!qstore@{qstore}}
+\index{qstore@{qstore}!O4ered.cpp@{O4ered.\-cpp}}
+\subsubsection[{qstore}]{\setlength{\rightskip}{0pt plus 5cm}void qstore (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{q}
+\end{DoxyParamCaption}
+)}\label{_o4ered_8cpp_a3a30ff13a00c3d0ca9fb8436cc3a45b6}
+
+
+Вставка в очередь нового элемента 
+
+Данная функция позволяет добавить в очередь новый элемент при условии, что количество элементов не будет превышать ограничения добавление элемента
+
+увеличение счетчика 
+
+Definition at line 59 of file O4ered.\-cpp.
+
+\index{O4ered.\-cpp@{O4ered.\-cpp}!review@{review}}
+\index{review@{review}!O4ered.cpp@{O4ered.\-cpp}}
+\subsubsection[{review}]{\setlength{\rightskip}{0pt plus 5cm}void review (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_o4ered_8cpp_a373facde6fa9f194732349b755be34d3}
+
+
+Вставка в очередь нового элемента 
+
+Данная функция позволяет просмотреть все элементы очереди по очереди инициализация счетчика 
+
+Definition at line 75 of file O4ered.\-cpp.
+

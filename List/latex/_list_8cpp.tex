@@ -1,0 +1,141 @@
+\section{List.\-cpp File Reference}
+\label{_list_8cpp}\index{List.\-cpp@{List.\-cpp}}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$locale.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf address}
+\begin{DoxyCompactList}\small\item\em Пространство имен A. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf address} {\bf sls\-\_\-store} (struct {\bf address} $\ast$i, struct {\bf address} $\ast$$\ast$start, struct {\bf address} $\ast$$\ast$last)
+\begin{DoxyCompactList}\small\item\em Вставка в упорядоченный односвязный список. \end{DoxyCompactList}\item 
+void {\bf display} (struct {\bf address} $\ast$start)\label{_list_8cpp_aa40ba7a82e24b4eaa349288b6a2f2f48}
+
+\begin{DoxyCompactList}\small\item\em Функция вывода структуры \end{DoxyCompactList}\item 
+struct {\bf address} $\ast$ {\bf search} (struct {\bf address} $\ast$start, char $\ast$n)
+\begin{DoxyCompactList}\small\item\em поиск элемента в списке \end{DoxyCompactList}\item 
+void {\bf sldelete} (struct {\bf address} $\ast$prev, struct {\bf address} $\ast$i, struct {\bf address} $\ast$$\ast$start, struct {\bf address} $\ast$$\ast$last)
+\begin{DoxyCompactList}\small\item\em конец списка \end{DoxyCompactList}\item 
+int {\bf main} ()
+\begin{DoxyCompactList}\small\item\em Основная функция. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char {\bfseries name} [40]\label{_list_8cpp_af8489b951d11304c90e75519a6d08d1a}
+
+\item 
+char {\bfseries street} [40]\label{_list_8cpp_ae2f315532384ebd0e626f1a2dcdb9792}
+
+\item 
+char {\bfseries city} [20]\label{_list_8cpp_a35c49f482fe5ff1242a8be75bbe76b09}
+
+\item 
+char {\bfseries state} [3]\label{_list_8cpp_ae95c0dd49785a54106946f62f1a56792}
+
+\item 
+char {\bfseries zip} [11]\label{_list_8cpp_a029adf816b3a216e108c2fcf73476fa4}
+
+\item 
+struct {\bf address} $\ast$ {\bfseries next}\label{_list_8cpp_a1a2c8929dd993e279c4cb2b604c4ef93}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{List.\-cpp@{List.\-cpp}!main@{main}}
+\index{main@{main}!List.cpp@{List.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_list_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Основная функция. 
+
+\begin{DoxyReturn}{Returns}
+Функция возвращает пустое значение 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file List.\-cpp.
+
+\index{List.\-cpp@{List.\-cpp}!search@{search}}
+\index{search@{search}!List.cpp@{List.\-cpp}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf address}$\ast$ search (
+\begin{DoxyParamCaption}
+\item[{struct {\bf address} $\ast$}]{start, }
+\item[{char $\ast$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [read]}}\label{_list_8cpp_a894ee51ba516418649b6d1392d09d94c}
+
+
+поиск элемента в списке 
+
+подходящий элемент не найден 
+
+Definition at line 86 of file List.\-cpp.
+
+\index{List.\-cpp@{List.\-cpp}!sldelete@{sldelete}}
+\index{sldelete@{sldelete}!List.cpp@{List.\-cpp}}
+\subsubsection[{sldelete}]{\setlength{\rightskip}{0pt plus 5cm}void sldelete (
+\begin{DoxyParamCaption}
+\item[{struct {\bf address} $\ast$}]{prev, }
+\item[{struct {\bf address} $\ast$}]{i, }
+\item[{struct {\bf address} $\ast$$\ast$}]{start, }
+\item[{struct {\bf address} $\ast$$\ast$}]{last}
+\end{DoxyParamCaption}
+)}\label{_list_8cpp_a0e972457591032386de12ac5668c14e9}
+
+
+конец списка 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & предыдущий элемент \\
+\hline
+{\em start} & удаляемый элемент \\
+\hline
+{\em last} & начало списка \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 96 of file List.\-cpp.
+
+\index{List.\-cpp@{List.\-cpp}!sls\-\_\-store@{sls\-\_\-store}}
+\index{sls\-\_\-store@{sls\-\_\-store}!List.cpp@{List.\-cpp}}
+\subsubsection[{sls\-\_\-store}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf address} sls\-\_\-store (
+\begin{DoxyParamCaption}
+\item[{struct {\bf address} $\ast$}]{i, }
+\item[{struct {\bf address} $\ast$$\ast$}]{start, }
+\item[{struct {\bf address} $\ast$$\ast$}]{last}
+\end{DoxyParamCaption}
+)}\label{_list_8cpp_a78c628aca6658622228ca6ad89d59783}
+
+
+Вставка в упорядоченный односвязный список. 
+
+конец списка первый элемент в списке
+
+в середину
+
+в начало
+
+в конец 
+\begin{DoxyParams}{Parameters}
+{\em start} & новый элемент \\
+\hline
+{\em last} & начало списка \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file List.\-cpp.
+

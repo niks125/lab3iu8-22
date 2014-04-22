@@ -1,0 +1,97 @@
+\section{Stak.\-cpp File Reference}
+\label{_stak_8cpp}\index{Stak.\-cpp@{Stak.\-cpp}}
+{\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$locale.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries M\-A\-X}~100\label{_stak_8cpp_a392fb874e547e582e9c66a08a1f23326}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf vnesenie} (int i)
+\begin{DoxyCompactList}\small\item\em указатель на дно стека \end{DoxyCompactList}\item 
+int {\bf topp} (void)
+\begin{DoxyCompactList}\small\item\em Получение верхнего элемента из стека. \end{DoxyCompactList}\item 
+int {\bf main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ {\bfseries free\-\_\-pam9t}\label{_stak_8cpp_af308540bd2f45434fd45cbf67a203042}
+
+\item 
+int $\ast$ {\bf top}\label{_stak_8cpp_ae684155dc78d426279cc590840bd3b56}
+
+\begin{DoxyCompactList}\small\item\em указатель на область свободной памяти \end{DoxyCompactList}\item 
+int $\ast$ {\bf end}\label{_stak_8cpp_a5fccd2713eeb2915db0d8484e2b9bd77}
+
+\begin{DoxyCompactList}\small\item\em указатель на вершину стека \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Stak.\-cpp@{Stak.\-cpp}!main@{main}}
+\index{main@{main}!Stak.cpp@{Stak.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_stak_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+Основная функция Руссифицируем
+
+Инициализируем массим разверности 80
+
+получаем память для стека
+
+Вывод сообщения, если не получена память для стека
+
+Проверка на введеный символ
+
+Definition at line 60 of file Stak.\-cpp.
+
+\index{Stak.\-cpp@{Stak.\-cpp}!topp@{topp}}
+\index{topp@{topp}!Stak.cpp@{Stak.\-cpp}}
+\subsubsection[{topp}]{\setlength{\rightskip}{0pt plus 5cm}int topp (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_stak_8cpp_afd948943c09383baa4841dc7a0ca7bd0}
+
+
+Получение верхнего элемента из стека. 
+
+Вывод сообщения если стек пустой
+
+\begin{DoxyReturn}{Returns}
+Успешное завершение
+\end{DoxyReturn}
+
+
+Definition at line 40 of file Stak.\-cpp.
+
+\index{Stak.\-cpp@{Stak.\-cpp}!vnesenie@{vnesenie}}
+\index{vnesenie@{vnesenie}!Stak.cpp@{Stak.\-cpp}}
+\subsubsection[{vnesenie}]{\setlength{\rightskip}{0pt plus 5cm}void vnesenie (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{_stak_8cpp_a38cd3b1bc57f3730510a6a8c2d2ef2df}
+
+
+указатель на дно стека 
+
+Занесение элемента в стек. 
+\begin{DoxyParams}{Parameters}
+{\em Номер} & элемента \\
+\hline
+\end{DoxyParams}
+Вывод сообщения если стек переполнен
+
+Definition at line 24 of file Stak.\-cpp.
+
